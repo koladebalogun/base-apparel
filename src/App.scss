@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+html{
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: 'Josefin Sans', sans-serif;
+        visibility: hidden;
+    }
+}
+
+
+.hero{
+    height: 100vh;
+    .container{
+        width: 1440px;
+        min-width: 1440px;
+        margin: 0 auto;
+        
+        .hero-inner{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            height: 100vh;
+            background-image: url('./images/pattern.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left 0px top -100px;
+            background-size: 100%;
+            .hero-content{
+                width: 50%;
+            
+                .hero-content-inner{
+                    width: 400px;
+                    margin: 0 auto;
+                    .hero-logo{
+                        position: relative;
+                        top: -100px;
+                    }
+                    h1{
+                        font-weight: 600;
+                        font-size: 60px;
+                        margin-bottom: 24px;
+                        color: hsl(0, 6%, 24%);
+                        opacity: 1;
+                        .hero-content-span{
+                            font-weight: 100;
+                            color: hsl(0, 36%, 70%);
+                            
+                        }
+                        .hero-content-line{
+                            margin: 0;
+                            height: 44px;
+                            padding-bottom: 25px;
+                            letter-spacing: 20px;
+                            overflow: hidden;
+                        }
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        padding-right: 48px;
+                        margin-bottom: 56px;
+                        color: hsl(0, 36%, 70%);
+                    }
+                    .subscribe-btn{
+                        position: relative;
+                        input[type=text]{
+                            padding: 14px;
+                            width: 80%;
+                            border: 1px solid hsl(0, 80%, 86%);
+                            outline: none;
+                            border-radius: 25px;
+                        }
+                        button{
+                            font-size: 12px;
+                            padding: 15px;
+                            cursor: pointer;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            letter-spacing: .7px;
+                            width: 25%;
+                            background-image: linear-gradient(135deg, hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+                            border: 1px solid hsl(0, 80%, 86%);
+                            color: white;
+                            border-radius: 25px;
+                            position: absolute;
+                            right: 10px;
+                        }
+                        .error{
+                            font: 12px;
+                            color: hsl(0, 93%, 68%);
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+
+           
+
+            .img-container{
+                width: 610px;
+                height: 800px;
+                position: relative;
+                overflow: hidden;
+                
+                img{
+                    position: relative;
+                    width: 610px;
+                    
+
+                }
+            }
+
+            
+        
+ 
+            
+        }
+    }
+}
+
+.intro-overlay{
+    .right{
+        width: 610px;
+        height: 800px;
+        position: absolute;
+        z-index: 8;
+
+        .overlay-right{
+            position: absolute;
+            height: 100%;
+            width: 610px;
+            background: hsl(0, 100%, 98%);
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
